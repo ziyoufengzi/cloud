@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/cloud.iml" filepath="$PROJECT_DIR$/cloud.iml" />
       <module fileurl="file://$PROJECT_DIR$/cloud-commonservice/cloud-commonservice.iml" filepath="$PROJECT_DIR$/cloud-commonservice/cloud-commonservice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud-commonservice-eureka/cloud-commonservice-eureka.iml" filepath="$PROJECT_DIR$/cloud-commonservice-eureka/cloud-commonservice-eureka.iml" />
       <module fileurl="file://$PROJECT_DIR$/cloud-component/cloud-component.iml" filepath="$PROJECT_DIR$/cloud-component/cloud-component.iml" />
       <module fileurl="file://$PROJECT_DIR$/cloud-component-utils/cloud-component-utils.iml" filepath="$PROJECT_DIR$/cloud-component-utils/cloud-component-utils.iml" />
       <module fileurl="file://$PROJECT_DIR$/cloud-peis/cloud-peis.iml" filepath="$PROJECT_DIR$/cloud-peis/cloud-peis.iml" />

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
-<mapper namespace="com.jfsoft.mapper.TcPerCheckinfoMapper" >
-	<resultMap id="BaseResultMap" type="com.jfsoft.model.TcPerCheckinfo" >
+<mapper namespace="com.jfsoft.peis.mapper.TcPerCheckinfoMapper" >
+	<resultMap id="BaseResultMap" type="com.jfsoft.peis.entity.TcPerCheckinfo" >
 		<id column="ID" property="id" jdbcType="INTEGER" />
 		<result column="hospital_code" property="hospitalCode" jdbcType="VARCHAR" />
 		<result column="testno" property="testno" jdbcType="VARCHAR" />
@@ -118,21 +118,6 @@
 		memo, areacode, marriage, reserve1, reserve2, reserve3, reserve4
 	</sql>
 
-	<select id="selectByExample" resultMap="BaseResultMap" parameterType="com.jfsoft.model.TcPerCheckinfoExample" >
-		select
-		<if test="distinct" >
-			distinct
-		</if>
-		<include refid="Base_Column_List" />
-		from tc_per_checkinfo
-		<if test="_parameter != null" >
-			<include refid="Example_Where_Clause" />
-		</if>
-		<if test="orderByClause != null" >
-			order by ${orderByClause}
-		</if>
-	</select>
-
 	<select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
 		select 
 		<include refid="Base_Column_List" />
@@ -145,14 +130,7 @@
 		where ID = #{id,jdbcType=INTEGER}
 	</delete>
 
-	<delete id="deleteByExample" parameterType="com.jfsoft.model.TcPerCheckinfoExample" >
-		delete from tc_per_checkinfo
-		<if test="_parameter != null" >
-			<include refid="Example_Where_Clause" />
-		</if>
-	</delete>
-
-	<insert id="insert" parameterType="com.jfsoft.model.TcPerCheckinfo" >
+	<insert id="insert" parameterType="com.jfsoft.peis.entity.TcPerCheckinfo" >
 		insert into tc_per_checkinfo (ID, hospital_code, testno, 
 			recodeno, name, pycode, 
 			sex, age, ageunit, birthday, 
@@ -187,7 +165,7 @@
 			)
 	</insert>
 
-	<insert id="insertSelective" parameterType="com.jfsoft.model.TcPerCheckinfo" >
+	<insert id="insertSelective" parameterType="com.jfsoft.peis.entity.TcPerCheckinfo" >
 		insert into tc_per_checkinfo
 		<trim prefix="(" suffix=")" suffixOverrides="," >
 			<if test="id != null" >
@@ -471,13 +449,6 @@
 		</trim>
 	</insert>
 
-	<select id="countByExample" parameterType="com.jfsoft.model.TcPerCheckinfoExample" resultType="java.lang.Integer" >
-		select count(*) from tc_per_checkinfo
-		<if test="_parameter != null" >
-			<include refid="Example_Where_Clause" />
-		</if>
-	</select>
-
 	<update id="updateByExampleSelective" parameterType="map" >
 		update tc_per_checkinfo
 		<set >
@@ -678,7 +649,7 @@
 		</if>
 	</update>
 
-	<update id="updateByPrimaryKeySelective" parameterType="com.jfsoft.model.TcPerCheckinfo" >
+	<update id="updateByPrimaryKeySelective" parameterType="com.jfsoft.peis.entity.TcPerCheckinfo" >
 		update tc_per_checkinfo
 		<set >
 			<if test="hospitalCode != null" >
@@ -820,7 +791,7 @@
 		where ID = #{id,jdbcType=INTEGER}
 	</update>
 
-	<update id="updateByPrimaryKey" parameterType="com.jfsoft.model.TcPerCheckinfo" >
+	<update id="updateByPrimaryKey" parameterType="com.jfsoft.peis.entity.TcPerCheckinfo" >
 		update tc_per_checkinfo
 		set hospital_code = #{hospitalCode,jdbcType=VARCHAR},
 			testno = #{testno,jdbcType=VARCHAR},
