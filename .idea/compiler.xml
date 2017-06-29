@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="cloud-commonservice-eureka" />
+        <module name="cloud-component-utils" />
+        <module name="cloud-peis-api" />
+        <module name="cloud-peis-dao" />
+        <module name="cloud-peis-service" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="cloud-commonservice" target="1.6" />
+      <module name="cloud-commonservice-eureka" target="1.8" />
+      <module name="cloud-component" target="1.5" />
+      <module name="cloud-component-utils" target="1.5" />
+      <module name="cloud-peis" target="1.8" />
+      <module name="cloud-peis-api" target="1.8" />
+      <module name="cloud-peis-dao" target="1.8" />
+      <module name="cloud-peis-service" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

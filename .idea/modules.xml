@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/cloud.iml" filepath="$PROJECT_DIR$/cloud.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud-commonservice/cloud-commonservice.iml" filepath="$PROJECT_DIR$/cloud-commonservice/cloud-commonservice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud-commonservice-eureka/cloud-commonservice-eureka.iml" filepath="$PROJECT_DIR$/cloud-commonservice-eureka/cloud-commonservice-eureka.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud-component/cloud-component.iml" filepath="$PROJECT_DIR$/cloud-component/cloud-component.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud-component-utils/cloud-component-utils.iml" filepath="$PROJECT_DIR$/cloud-component-utils/cloud-component-utils.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud-peis/cloud-peis.iml" filepath="$PROJECT_DIR$/cloud-peis/cloud-peis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud-peis-api/cloud-peis-api.iml" filepath="$PROJECT_DIR$/cloud-peis-api/cloud-peis-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud-peis-dao/cloud-peis-dao.iml" filepath="$PROJECT_DIR$/cloud-peis-dao/cloud-peis-dao.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud-peis-service/cloud-peis-service.iml" filepath="$PROJECT_DIR$/cloud-peis-service/cloud-peis-service.iml" />
+    </modules>
+  </component>
+</project>
