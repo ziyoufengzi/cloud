@@ -1,5 +1,6 @@
 package com.jfsoft.peis.controller;
 
+import com.jfsoft.peis.entity.TcPerCheckinfo;
 import com.jfsoft.peis.service.IPeisService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
@@ -19,22 +20,25 @@ public class PeisController {
     @Autowired
     private IPeisService peisService;
 
+    /**
+     * spring cloud测试
+     */
     @Value("${server.port}")
     String port;
-    @RequestMapping("/peis")
+    @RequestMapping("/test")
     public String home(@RequestParam String name) {
         return "hi "+name+",i am from port:" +port;
     }
 
-    @PostMapping(value = "/save")
-    public HttpEntity save(@ModelAttribute Map map) {
-        try {
-            System.out.println(map.get("abc"));
-            peisService.insertPeisPercheckinfo();
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-        return new ResponseEntity<>(map, HttpStatus.OK);
-    }
 
+    /**
+     * 体检人员信息保存接口
+     * @param tcPerCheckinfo
+     * @return
+     */
+    @PostMapping(value = "/peisSave")
+    public HttpEntity peisSave(@ModelAttribute TcPerCheckinfo tcPerCheckinfo){
+        peisService.insertPeisPercheckinfo(tcPerCheckinfo);
+        return new ResponseEntity<>(tcPerCheckinfo, HttpStatus.ACCEPTED);
+    }
 }
