@@ -1,5 +1,6 @@
 package com.jfsoft.peis.service.impl;
 
+import com.jfsoft.peis.entity.TcPerCheckinfo;
 import com.jfsoft.peis.mapper.TcPerCheckinfoMapper;
 import com.jfsoft.peis.service.IPeisService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,9 +15,9 @@ public class PeisServiceImpl implements IPeisService {
     @Autowired
     private TcPerCheckinfoMapper tcPerCheckinfoMapper;
 
-    public String insertPeisPercheckinfo() throws Exception {
 
-        return "";
+    @Override
+    public Integer insertPeisPercheckinfo(TcPerCheckinfo tcPerCheckinfo) {
+        return tcPerCheckinfoMapper.insertSelective(tcPerCheckinfo);
     }
-
 }

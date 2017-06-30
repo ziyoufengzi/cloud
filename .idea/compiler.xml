@@ -8,6 +8,9 @@
         <outputRelativeToContentRoot value="true" />
         <module name="cloud-commonservice-eureka" />
         <module name="cloud-component-utils" />
+        <module name="cloud-lis-api" />
+        <module name="cloud-lis-dao" />
+        <module name="cloud-lis-service" />
         <module name="cloud-peis-api" />
         <module name="cloud-peis-dao" />
         <module name="cloud-peis-service" />
@@ -17,10 +20,16 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+
       <module name="cloud-commonservice" target="1.7" />
-      <module name="cloud-commonservice-eureka" target="1.7" />
       <module name="cloud-component" target="1.7" />
       <module name="cloud-component-utils" target="1.7" />
+      <module name="cloud-commonservice-eureka" target="1.8" />
+      <module name="cloud-lis" target="1.8" />
+      <module name="cloud-lis-api" target="1.8" />
+      <module name="cloud-lis-dao" target="1.8" />
+      <module name="cloud-lis-service" target="1.8" />
+
       <module name="cloud-peis" target="1.8" />
       <module name="cloud-peis-api" target="1.8" />
       <module name="cloud-peis-dao" target="1.8" />
