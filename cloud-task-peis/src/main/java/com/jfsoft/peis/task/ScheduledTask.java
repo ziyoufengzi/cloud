@@ -1,6 +1,7 @@
 package com.jfsoft.peis.task;
 
 import com.jfsoft.peis.service.IPeisService;
+import com.jfsoft.peis.service.IPeisStoreService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,12 +19,16 @@ public class ScheduledTask {
     @Autowired
     private IPeisService peisService;
 
+    @Autowired
+    private IPeisStoreService peisStoreService;
+
     @Scheduled(cron = "*/5 * * * * ?")
     public void execute() {
         System.out.println("现在时间是："+System.currentTimeMillis());
         try {
             String testno = peisService.getPerCheckInfoProc("5009", "001");
-            //schedualPeisService.peisSave(testno);
+            System.out.println("---------体检号为--------" + testno);
+            peisStoreService.peisSave(testno);
         } catch (Exception e) {
             e.printStackTrace();
         }
