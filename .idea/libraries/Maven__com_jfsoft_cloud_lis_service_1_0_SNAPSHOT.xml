@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.jfsoft:cloud-lis-service:1.0-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/cloud-lis-service/pom.xml!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$PROJECT_DIR$/cloud-lis-service/cloud-lis-service-1.0-SNAPSHOT-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/cloud-lis-service/cloud-lis-service-1.0-SNAPSHOT-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
